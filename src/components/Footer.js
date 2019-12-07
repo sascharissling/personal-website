@@ -20,18 +20,18 @@ const FooterBar = styled.footer`
 `;
 
 const SocialLink = styled.a`
-  color: #343434;
+  color: ${props => props.theme.secondary};
   cursor: pointer;
   &:hover {
-    color: #9932cc;
+    color: ${props => props.theme.primary};
   }
 `;
 
 const GitHub = styled(GitHubIcon)`
   zoom: 1.3;
-  color: #9932cc;
+  color: ${props => props.theme.primary};
   &:hover {
-    color: gold;
+    color: ${props => props.theme.tertiary};
   }
 `;
 

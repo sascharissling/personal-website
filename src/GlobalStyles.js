@@ -23,8 +23,3 @@ export default function GlobalStyles() {
 //FONTS
 // font-family: 'Abril Fatface', cursive;
 // font-family: 'Source Sans Pro', sans-serif;
-
-//COLORS
-// background-white:  #f7f8f7;
-// action: #9932CC;
-// black1: #343434;

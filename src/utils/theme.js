@@ -1,7 +1,7 @@
 const theme = {
-  primary: "#9932CC",
+  primary: "#FF4500",
   secondary: "#343434",
-  tertiary: "lime",
+  tertiary: "gold",
   background: "#f7f8f7"
 };
 

@@ -10,7 +10,7 @@ const Impressum = styled.div`
   color: grey;
 
   &:hover {
-    color: #9932cc;
+    color: ${props => props.theme.primary};
   }
 `;
 

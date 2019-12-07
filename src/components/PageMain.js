@@ -20,26 +20,26 @@ const PageIdentity = styled.main`
 
 const Headline = styled.h1`
   font-size: 3rem;
-  color: #343434;
+  color: ${props => props.theme.secondary};
   font-family: "Merriweather", serif;
 
   cursor: pointer;
 
   span {
-    color: #9932cc;
+    color: ${props => props.theme.primary};
     &:hover {
-      color: #343434;
+      color: ${props => props.theme.secondary};
     }
   }
 `;
 
 const JobPopup = styled.p`
   cursor: pointer;
-  color: #9932cc;
-  font-size: 1.3rem;
+  color: ${props => props.theme.primary};
+  font-size: 1rem;
 
   &:hover {
-    color: #343434;
+    color: ${props => props.theme.secondary};
   }
 `;
 
