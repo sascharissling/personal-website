@@ -12,10 +12,12 @@ import PageMain from "./components/PageMain";
 
 const AppContainer = styled.div`
   height: 100vh;
+  width: 100vw;
 
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  align-content: center;
   justify-content: center;
 `;
 

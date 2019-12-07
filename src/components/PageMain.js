@@ -12,27 +12,31 @@ const PageIdentity = styled.main`
   flex-flow: column nowrap;
   align-items: center;
   align-content: center;
+  justify-content: center;
+  text-align: center;
 
   margin: 20px;
 `;
 
 const Headline = styled.h1`
-  font-size: 5rem;
+  font-size: 3rem;
   color: #343434;
-  line-height: 1rem;
   font-family: "Merriweather", serif;
 
   cursor: pointer;
 
-  &:hover {
+  span {
     color: #9932cc;
+    &:hover {
+      color: #343434;
+    }
   }
 `;
 
 const JobPopup = styled.p`
   cursor: pointer;
   color: #9932cc;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 
   &:hover {
     color: #343434;
@@ -53,7 +57,7 @@ const Divider = styled.p`
 `;
 
 const DevImage = styled.img`
-  height: 80vh;
+  height: 30vh;
 
   top: 30px;
   position: absolute;
@@ -75,7 +79,7 @@ export default function PageMain() {
         onMouseEnter={() => setSaschaIsShown(true)}
         onMouseLeave={() => setSaschaIsShown(false)}
       >
-        Sascha Rissling
+        Hello, I am <span>Sascha</span>.
       </Headline>
       <ProfessionalSkills>
         <Popup trigger={<JobPopup>Web Developer</JobPopup>} modal>
