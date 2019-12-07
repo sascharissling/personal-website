@@ -1,15 +1,22 @@
 import React from "react";
+
+//STYLE imports
 import GlobalStyles from "./GlobalStyles";
 import styled from "@emotion/styled";
+
+//COMPONENTS import
+import Footer from "./components/Footer";
+import PageMain from "./components/PageMain";
 
 //STYLE start
 
 const AppContainer = styled.div`
   height: 100vh;
+
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 //STYLE end
@@ -18,6 +25,8 @@ function App() {
   return (
     <AppContainer>
       <GlobalStyles />
+      <PageMain />
+      <Footer />
     </AppContainer>
   );
 }
