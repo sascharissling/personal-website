@@ -3,6 +3,8 @@ import React from "react";
 //STYLE imports
 import GlobalStyles from "./GlobalStyles";
 import styled from "@emotion/styled";
+import { ThemeProvider } from "emotion-theming";
+import theme from "./utils/theme";
 
 //COMPONENTS import
 import Footer from "./components/Footer";
@@ -26,12 +28,14 @@ const AppContainer = styled.div`
 
 function App() {
   return (
-    <AppContainer>
-      <GlobalStyles />
-      <PageMain />
-      <Footer />
-      <ImpressumLink />
-    </AppContainer>
+    <ThemeProvider theme={theme}>
+      <AppContainer>
+        <GlobalStyles />
+        <PageMain />
+        <Footer />
+        <ImpressumLink />
+      </AppContainer>
+    </ThemeProvider>
   );
 }
 
