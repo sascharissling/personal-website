@@ -11,27 +11,27 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 //STYLE start
 
 const FooterBar = styled.footer`
-  width: 20vw;
+  width: 60vw;
 
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `;
 
 const SocialLink = styled.a`
-  color: #343434;
+  color: ${props => props.theme.secondary};
   cursor: pointer;
   &:hover {
-    color: #9932cc;
+    color: ${props => props.theme.primary};
   }
 `;
 
 const GitHub = styled(GitHubIcon)`
   zoom: 1.3;
-  color: #9932cc;
+  color: ${props => props.theme.primary};
   &:hover {
-    color: gold;
+    color: ${props => props.theme.tertiary};
   }
 `;
 
