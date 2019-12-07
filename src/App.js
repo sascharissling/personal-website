@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyles from "./GlobalStyles";
 import styled from "@emotion/styled";
+import Footer from "./components/Footer";
 
 //STYLE start
 
@@ -25,6 +26,7 @@ function App() {
       <GlobalStyles />
       <Headline>Sascha Rissling</Headline>
       <p>Web Developer & Music Producer</p>
+      <Footer />
     </AppContainer>
   );
 }
