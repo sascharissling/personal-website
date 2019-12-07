@@ -7,6 +7,7 @@ import styled from "@emotion/styled";
 //COMPONENTS import
 import Footer from "./components/Footer";
 import PageMain from "./components/PageMain";
+import ImpressumLink from "./components/Impressum";
 
 //STYLE start
 
@@ -29,6 +30,7 @@ function App() {
       <GlobalStyles />
       <PageMain />
       <Footer />
+      <ImpressumLink />
     </AppContainer>
   );
 }
