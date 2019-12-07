@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
+import sascha from "../assets/sascha.JPG";
 
 //STYLE imports
 import styled from "@emotion/styled";
@@ -30,9 +31,7 @@ const Headline = styled.h1`
 
 const JobPopup = styled.p`
   cursor: pointer;
-
   color: #9932cc;
-
   font-size: 1.5rem;
 
   &:hover {
@@ -53,24 +52,39 @@ const Divider = styled.p`
   font-size: 1.7rem;
 `;
 
+const DevImage = styled.img`
+  height: 80vh;
+
+  top: 30px;
+  position: absolute;
+
+  border-radius: 15px 0px 15px 0px;
+
+  filter: grayscale(100%);
+`;
+
 //STYLE end
 
 export default function PageMain() {
+  const [saschaIsShown, setSaschaIsShown] = React.useState(false);
+
   return (
     <PageIdentity>
-      <Popup
-        trigger={<Headline>Sascha Rissling</Headline>}
-        position="right center"
+      {saschaIsShown && <DevImage src={sascha} alt="Sascha Rissling" />}
+      <Headline
+        onMouseEnter={() => setSaschaIsShown(true)}
+        onMouseLeave={() => setSaschaIsShown(false)}
       >
-        <img src="#" alt="Sascha Rissling" />
-      </Popup>
+        Sascha Rissling
+      </Headline>
       <ProfessionalSkills>
-        <Popup
-          trigger={<JobPopup>Web Developer</JobPopup>}
-          position="left center"
-        ></Popup>
+        <Popup trigger={<JobPopup>Web Developer</JobPopup>} modal>
+          Web Developer Content
+        </Popup>
         <Divider>/</Divider>
-        <JobPopup>Music Producer</JobPopup>
+        <Popup trigger={<JobPopup>Music Producer</JobPopup>} modal>
+          Music Producer Content
+        </Popup>
       </ProfessionalSkills>
     </PageIdentity>
   );
