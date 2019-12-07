@@ -26,5 +26,5 @@ export default function GlobalStyles() {
 
 //COLORS
 // background-white:  #f7f8f7;
-// accent1:
+// action: #9932CC;
 // black1: #343434;
