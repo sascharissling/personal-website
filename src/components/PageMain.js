@@ -16,14 +16,41 @@ const PageIdentity = styled.main`
 `;
 
 const Headline = styled.h1`
-  font-size: 3rem;
+  font-size: 5rem;
   color: #343434;
   line-height: 1rem;
+  font-family: "Merriweather", serif;
+
   cursor: pointer;
+
   &:hover {
     color: #9932cc;
-    text-shadow: 3px 9px 114px -36px rgba(0, 0, 0, 1);
   }
+`;
+
+const JobPopup = styled.p`
+  cursor: pointer;
+
+  color: #9932cc;
+
+  font-size: 1.5rem;
+
+  &:hover {
+    color: #343434;
+  }
+`;
+
+const ProfessionalSkills = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+`;
+
+const Divider = styled.p`
+  font-size: 1.7rem;
 `;
 
 //STYLE end
@@ -31,10 +58,20 @@ const Headline = styled.h1`
 export default function PageMain() {
   return (
     <PageIdentity>
-      <Popup trigger={<Headline>Sascha Rissling</Headline>} position="center">
-        <img src="/assets/sascharissling.png" alt="Sascha Rissling" />
+      <Popup
+        trigger={<Headline>Sascha Rissling</Headline>}
+        position="right center"
+      >
+        <img src="#" alt="Sascha Rissling" />
       </Popup>
-      <p>Web Developer & Music Producer</p>
+      <ProfessionalSkills>
+        <Popup
+          trigger={<JobPopup>Web Developer</JobPopup>}
+          position="left center"
+        ></Popup>
+        <Divider>/</Divider>
+        <JobPopup>Music Producer</JobPopup>
+      </ProfessionalSkills>
     </PageIdentity>
   );
 }
