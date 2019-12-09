@@ -4,7 +4,7 @@ import sascha from "../assets/sascha.png";
 
 //STYLE imports
 import styled from "@emotion/styled";
-import MusicProducer from "./MusicProducer";
+import MusicProducer from "../pages/MusicProducer";
 
 //STYLE start
 

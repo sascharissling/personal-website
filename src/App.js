@@ -10,13 +10,13 @@ import theme from "./utils/theme";
 //COMPONENTS import
 import Footer from "./components/Footer";
 import PageMain from "./components/PageMain";
-import Impressum from "./components/Impressum";
+import Impressum from "./pages/Impressum";
 
 //STYLE start
 
 const AppContainer = styled.div`
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-flow: column nowrap;
@@ -26,8 +26,7 @@ const AppContainer = styled.div`
 `;
 
 const Legal = styled.div`
-  position: absolute;
-  bottom: 10px;
+  margin: 15px;
 `;
 
 const ImpressumLink = styled(Link)`
@@ -40,8 +39,8 @@ const ImpressumLink = styled(Link)`
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <AppContainer>
-        <GlobalStyles />
         <Router>
           <Route path="/" exact component={PageMain} />
           <Route path="/impressum" component={Impressum} />
