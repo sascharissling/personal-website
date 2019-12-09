@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //STYLE imports
 import GlobalStyles from "./GlobalStyles";
@@ -29,15 +29,20 @@ const AppContainer = styled.div`
 //STYLE end
 
 function App() {
+  const [showLegal, setShowLegal] = React.useState(true);
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <AppContainer>
         <Router>
-          <Route path="/" exact component={PageMain} />
-          <Route path="/impressum" component={Impressum} />
+          <Switch>
+            <Route path="/" exact component={PageMain} />
+            <Route path="/impressum" component={Impressum} />
+          </Switch>
           <Footer />
-          <Legal />
+          {showLegal && <Legal onClick={() => setShowLegal(false)} />}
+          {!showLegal && <div></div>}
         </Router>
       </AppContainer>
     </ThemeProvider>
