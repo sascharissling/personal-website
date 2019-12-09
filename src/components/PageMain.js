@@ -1,6 +1,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import sascha from "../assets/sascha.png";
+import { Link } from "react-router-dom";
 
 //STYLE imports
 import styled from "@emotion/styled";
@@ -35,16 +36,6 @@ const Headline = styled.h1`
   }
 `;
 
-const JobPopup = styled.p`
-  cursor: pointer;
-  color: ${props => props.theme.primary};
-  font-size: 1rem;
-
-  &:hover {
-    color: ${props => props.theme.secondary};
-  }
-`;
-
 const ProfessionalSkills = styled.div`
   display: flex;
   flex-flow: row nowrap;
@@ -68,6 +59,17 @@ const DevImage = styled.img`
   box-shadow: 6px 6px 0px ${props => props.theme.primary};
 `;
 
+const SkillNavigation = styled(Link)`
+  cursor: pointer;
+  color: ${props => props.theme.primary};
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.theme.secondary};
+  }
+`;
+
 //STYLE end
 
 export default function PageMain() {
@@ -83,13 +85,9 @@ export default function PageMain() {
         Hello, I am <span>Sascha</span>.
       </Headline>
       <ProfessionalSkills>
-        <Popup trigger={<JobPopup>Web Developer</JobPopup>} modal>
-          <WebDeveloper />
-        </Popup>
+        <SkillNavigation to="/webdev">Web Developer</SkillNavigation>
         <Divider>/</Divider>
-        <Popup trigger={<JobPopup>Music Producer</JobPopup>} modal>
-          <MusicProducer />
-        </Popup>
+        <SkillNavigation to="/prod">Music Producer</SkillNavigation>
       </ProfessionalSkills>
     </PageIdentity>
   );

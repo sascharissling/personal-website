@@ -12,6 +12,8 @@ import Footer from "./components/Footer";
 import PageMain from "./components/PageMain";
 import Impressum from "./pages/Impressum";
 import Legal from "./components/Legal";
+import MusicProducer from "./pages/MusicProducer";
+import WebDeveloper from "./pages/WebDeveloper";
 
 //STYLE start
 
@@ -37,6 +39,8 @@ function App() {
           <Switch>
             <Route path="/" exact component={PageMain} />
             <Route path="/impressum" component={Impressum} />
+            <Route path="/webdev" component={WebDeveloper} />
+            <Route path="/prod" component={MusicProducer} />
           </Switch>
           <Footer />
           <Legal />

@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
-
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import GoBackIcon from "../icons/GoBackIcon";
 
 //STYLE start
 const ImpressumContainer = styled.div`
@@ -15,17 +13,11 @@ const ImpressumContainer = styled.div`
 
 const ImpressumText = styled.div``;
 
-const BackArrow = styled(ArrowBackIosIcon)`
-  color: ${props => props.theme.primary};
-`;
-
 //STYLE end
 export default function Impressum() {
   return (
     <ImpressumContainer>
-      <Link to="/">
-        <BackArrow />
-      </Link>
+      <GoBackIcon />
       <ImpressumText>
         <h1>Impressum</h1>
         <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
