@@ -13,7 +13,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 const FooterBar = styled.footer`
   width: 60vw;
 
-  margin: 15px;
+  margin: 15px 0px 50px 0px;
 
   display: flex;
   flex-flow: row nowrap;

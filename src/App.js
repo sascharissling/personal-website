@@ -29,8 +29,6 @@ const AppContainer = styled.div`
 //STYLE end
 
 function App() {
-  const [showLegal, setShowLegal] = React.useState(true);
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

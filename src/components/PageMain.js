@@ -25,7 +25,7 @@ const Headline = styled.h1`
   color: ${props => props.theme.secondary};
   font-family: "Merriweather", serif;
 
-  cursor: pointer;
+  cursor: wait;
 
   span {
     color: ${props => props.theme.primary};
