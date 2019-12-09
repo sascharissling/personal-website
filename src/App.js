@@ -41,8 +41,7 @@ function App() {
             <Route path="/impressum" component={Impressum} />
           </Switch>
           <Footer />
-          {showLegal && <Legal onClick={() => setShowLegal(false)} />}
-          {!showLegal && <div></div>}
+          <Legal />
         </Router>
       </AppContainer>
     </ThemeProvider>

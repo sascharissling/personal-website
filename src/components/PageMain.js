@@ -5,6 +5,7 @@ import sascha from "../assets/sascha.png";
 //STYLE imports
 import styled from "@emotion/styled";
 import MusicProducer from "../pages/MusicProducer";
+import WebDeveloper from "../pages/WebDeveloper";
 
 //STYLE start
 
@@ -83,7 +84,7 @@ export default function PageMain() {
       </Headline>
       <ProfessionalSkills>
         <Popup trigger={<JobPopup>Web Developer</JobPopup>} modal>
-          Web Developer Content
+          <WebDeveloper />
         </Popup>
         <Divider>/</Divider>
         <Popup trigger={<JobPopup>Music Producer</JobPopup>} modal>

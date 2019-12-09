@@ -4,10 +4,14 @@ import React from "react";
 import styled from "@emotion/styled";
 //STYLE start
 
-const MusicProduction = styled.h1`
+const MusicProduction = styled.div`
   font-family: "Merriweather", serif;
 `;
 
 export default function MusicProducer() {
-  return <MusicProduction>Music Production</MusicProduction>;
+  return (
+    <MusicProduction>
+      <h3>Music Production</h3>
+    </MusicProduction>
+  );
 }

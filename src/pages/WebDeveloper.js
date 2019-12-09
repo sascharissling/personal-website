@@ -4,10 +4,14 @@ import React from "react";
 import styled from "@emotion/styled";
 //STYLE start
 
-const WebDevelopment = styled.h1`
+const WebDevelopment = styled.div`
   font-family: "Merriweather", serif;
 `;
 
 export default function WebDeveloper() {
-  return <WebDevelopment>WebDevelopment</WebDevelopment>;
+  return (
+    <WebDevelopment>
+      <h3>Web Development</h3>
+    </WebDevelopment>
+  );
 }

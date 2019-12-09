@@ -10,6 +10,7 @@ const ImpressumContainer = styled.div`
   width: 80%;
   max-width: 700px;
   margin: 20px;
+  display: flex;
 `;
 
 const ImpressumText = styled.div``;
