@@ -19,6 +19,8 @@ const FooterBar = styled.footer`
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+
+  background: ${props => props.theme.background};
 `;
 
 const SocialLink = styled.a`
