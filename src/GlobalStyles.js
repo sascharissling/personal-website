@@ -22,4 +22,5 @@ export default function GlobalStyles() {
 
 //FONTS
 // font-family: 'Abril Fatface', cursive;
+// font-family: "Merriweather", serif;
 // font-family: 'Source Sans Pro', sans-serif;

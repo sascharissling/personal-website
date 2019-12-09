@@ -1,9 +1,10 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import sascha from "../assets/sascha.JPG";
+import sascha from "../assets/sascha.png";
 
 //STYLE imports
 import styled from "@emotion/styled";
+import MusicProducer from "./MusicProducer";
 
 //STYLE start
 
@@ -63,8 +64,7 @@ const DevImage = styled.img`
   position: absolute;
 
   border-radius: 15px 0px 15px 0px;
-
-  filter: grayscale(100%);
+  box-shadow: 6px 6px 0px ${props => props.theme.primary};
 `;
 
 //STYLE end
@@ -87,7 +87,7 @@ export default function PageMain() {
         </Popup>
         <Divider>/</Divider>
         <Popup trigger={<JobPopup>Music Producer</JobPopup>} modal>
-          Music Producer Content
+          <MusicProducer />
         </Popup>
       </ProfessionalSkills>
     </PageIdentity>
