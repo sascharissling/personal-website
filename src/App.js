@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //STYLE imports
 import GlobalStyles from "./GlobalStyles";
@@ -9,13 +10,16 @@ import theme from "./utils/theme";
 //COMPONENTS import
 import Footer from "./components/Footer";
 import PageMain from "./components/PageMain";
-import ImpressumLink from "./components/Impressum";
+import Impressum from "./pages/Impressum";
+import Legal from "./components/Legal";
+import MusicProducer from "./pages/MusicProducer";
+import WebDeveloper from "./pages/WebDeveloper";
 
 //STYLE start
 
 const AppContainer = styled.div`
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-flow: column nowrap;
@@ -29,11 +33,18 @@ const AppContainer = styled.div`
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <AppContainer>
-        <GlobalStyles />
-        <PageMain />
-        <Footer />
-        <ImpressumLink />
+        <Router>
+          <Switch>
+            <Route path="/" exact component={PageMain} />
+            <Route path="/impressum" component={Impressum} />
+            <Route path="/webdev" component={WebDeveloper} />
+            <Route path="/prod" component={MusicProducer} />
+          </Switch>
+          <Footer />
+          <Legal />
+        </Router>
       </AppContainer>
     </ThemeProvider>
   );

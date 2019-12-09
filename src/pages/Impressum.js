@@ -1,23 +1,24 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Popup from "reactjs-popup";
+import GoBackIcon from "../icons/GoBackIcon";
 
-const Impressum = styled.div`
-  position: absolute;
-  bottom: 3px;
-
-  cursor: pointer;
-  color: grey;
-
-  &:hover {
-    color: ${props => props.theme.primary};
-  }
+//STYLE start
+const ImpressumContainer = styled.div`
+  overflow: auto;
+  width: 80%;
+  max-width: 700px;
+  margin: 20px;
+  display: flex;
 `;
 
-export default function ImpressumLink() {
+const ImpressumText = styled.div``;
+
+//STYLE end
+export default function Impressum() {
   return (
-    <Impressum>
-      <Popup trigger={<p>Impressum</p>} modal>
+    <ImpressumContainer>
+      <GoBackIcon />
+      <ImpressumText>
         <h1>Impressum</h1>
         <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
         <p>
@@ -90,7 +91,7 @@ export default function ImpressumLink() {
           Quelle:{" "}
           <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
         </p>
-      </Popup>
-    </Impressum>
+      </ImpressumText>
+    </ImpressumContainer>
   );
 }

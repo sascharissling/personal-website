@@ -1,9 +1,12 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import sascha from "../assets/sascha.JPG";
+import sascha from "../assets/sascha.png";
+import { Link } from "react-router-dom";
 
 //STYLE imports
 import styled from "@emotion/styled";
+import MusicProducer from "../pages/MusicProducer";
+import WebDeveloper from "../pages/WebDeveloper";
 
 //STYLE start
 
@@ -23,23 +26,13 @@ const Headline = styled.h1`
   color: ${props => props.theme.secondary};
   font-family: "Merriweather", serif;
 
-  cursor: pointer;
+  cursor: wait;
 
   span {
     color: ${props => props.theme.primary};
     &:hover {
       color: ${props => props.theme.secondary};
     }
-  }
-`;
-
-const JobPopup = styled.p`
-  cursor: pointer;
-  color: ${props => props.theme.primary};
-  font-size: 1rem;
-
-  &:hover {
-    color: ${props => props.theme.secondary};
   }
 `;
 
@@ -63,8 +56,18 @@ const DevImage = styled.img`
   position: absolute;
 
   border-radius: 15px 0px 15px 0px;
+  box-shadow: 6px 6px 0px ${props => props.theme.primary};
+`;
 
-  filter: grayscale(100%);
+const SkillNavigation = styled(Link)`
+  cursor: pointer;
+  color: ${props => props.theme.primary};
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.theme.secondary};
+  }
 `;
 
 //STYLE end
@@ -82,13 +85,9 @@ export default function PageMain() {
         Hello, I am <span>Sascha</span>.
       </Headline>
       <ProfessionalSkills>
-        <Popup trigger={<JobPopup>Web Developer</JobPopup>} modal>
-          Web Developer Content
-        </Popup>
+        <SkillNavigation to="/webdev">Web Developer</SkillNavigation>
         <Divider>/</Divider>
-        <Popup trigger={<JobPopup>Music Producer</JobPopup>} modal>
-          Music Producer Content
-        </Popup>
+        <SkillNavigation to="/prod">Music Producer</SkillNavigation>
       </ProfessionalSkills>
     </PageIdentity>
   );
