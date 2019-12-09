@@ -8,6 +8,18 @@ import GoBackIcon from "../icons/GoBackIcon";
 const WebDevelopment = styled.div`
   width: 80vw;
   max-width: 500px;
+  span {
+    color: ${props => props.theme.primary};
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    font-size: 14px;
+    a {
+      color: ${props => props.theme.primary};
+      font-family: "Merriweather", serif;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
 `;
 //STYLE end
 
@@ -17,23 +29,24 @@ export default function WebDeveloper() {
       <GoBackIcon />
       <h3>Web Development</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-        dolorem debitis distinctio maxime molestias illo repudiandae quae dolore
-        cum temporibus.
+        In late 2019 I began my journey in Web Development with one of the first
+        bootcamps of its kind in germany at{" "}
+        <span>
+          <a href="https://neuefische.de" target="_blank">
+            neue fische
+          </a>
+        </span>
       </p>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-        necessitatibus quidem itaque quos impedit minus officia suscipit
-        commodi, rem modi excepturi minima incidunt reprehenderit, aliquam iusto
-        dolorum vel tenetur! Maiores distinctio illum nobis eos officiis
-        corrupti, expedita voluptate minus voluptatum excepturi ipsa ut? Aperiam
-        molestias, est esse error delectus tempore?
+        This bootcamp enabled me to open a floodgate of a part of my brain I had
+        never accessed before.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-        temporibus, natus nulla nemo dolor tempore, impedit, vero repellat vel
-        expedita numquam necessitatibus sed consequatur quidem inventore ipsam
-        corporis placeat optio! Ut aspernatur maxime laborum.
+        I love building intuitive, modern and beautiful front-end applications
+        in <span>React.js</span>. For projects and code please go ahead and
+        visit my well-organized GitHub page just below this text. All my
+        meaningful projects have detailed screenshots or deployments on zeit.co
+        going with them.
       </p>
     </WebDevelopment>
   );
