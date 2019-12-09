@@ -8,6 +8,9 @@ import GoBackIcon from "../icons/GoBackIcon";
 const WebDevelopment = styled.div`
   width: 80vw;
   max-width: 500px;
+  h3 {
+    font-family: "Merriweather", serif;
+  }
   span {
     color: ${props => props.theme.primary};
     font-family: "Merriweather", serif;

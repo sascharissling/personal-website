@@ -8,10 +8,10 @@ import GoBackIcon from "../icons/GoBackIcon";
 const MusicProduction = styled.div`
   width: 80vw;
   max-width: 500px;
-`;
-
-const Headline = styled.h3`
-  font-family: "Merriweather", serif;
+  overflow: auto;
+  h3 {
+    font-family: "Merriweather", serif;
+  }
 `;
 
 const Portfolio = styled.ul`
@@ -34,7 +34,7 @@ export default function MusicProducer() {
   return (
     <MusicProduction>
       <GoBackIcon />
-      <Headline>Music Production</Headline>
+      <h3>Music Production</h3>
       <p>
         I am a music producer with an audio degree and a passionate guitarist. I
         have played in many places of our beautiful planet. Like Tel Aviv,
