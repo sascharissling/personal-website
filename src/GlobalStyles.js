@@ -16,6 +16,12 @@ export default function GlobalStyles() {
           background: #f7f8f7;
         }
 
+        h1,
+        h2,
+        h3 {
+          font-family: "Merriweather", serif;
+        }
+
         /* width */
         *::-webkit-scrollbar {
           width: 5px;

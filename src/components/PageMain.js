@@ -1,12 +1,9 @@
 import React from "react";
-import Popup from "reactjs-popup";
 import sascha from "../assets/sascha.png";
 import { Link } from "react-router-dom";
 
 //STYLE imports
 import styled from "@emotion/styled";
-import MusicProducer from "../pages/MusicProducer";
-import WebDeveloper from "../pages/WebDeveloper";
 
 //STYLE start
 
