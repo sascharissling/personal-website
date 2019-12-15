@@ -35,7 +35,11 @@ export default function WebDeveloper() {
         In late 2019 I began my journey in Web Development with one of the first
         bootcamps of its kind in germany at{" "}
         <span>
-          <a href="https://neuefische.de" target="_blank">
+          <a
+            href="https://neuefische.de"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             neue fische
           </a>
         </span>

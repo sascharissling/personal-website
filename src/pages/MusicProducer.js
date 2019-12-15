@@ -54,13 +54,25 @@ export default function MusicProducer() {
         this page. But a couple of things I am very proud of are for example:
       </p>
       <Portfolio>
-        <a href="https://www.youtube.com/watch?v=FRBVjtSDSq0" target="_blank">
+        <a
+          href="https://www.youtube.com/watch?v=FRBVjtSDSq0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <li>Contributing for the Summer Breeze Open Air 2019 Trailer</li>
         </a>
-        <a href="https://www.youtube.com/watch?v=rNJeYm-1YIo" target="_blank">
+        <a
+          href="https://www.youtube.com/watch?v=rNJeYm-1YIo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <li>My first solo record which is up on all music platforms</li>
         </a>
-        <a href="https://www.youtube.com/watch?v=DrFJwLu9eTY" target="_blank">
+        <a
+          href="https://www.youtube.com/watch?v=DrFJwLu9eTY"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <li>Writing theme song for german speaker Felix Beilharz</li>
         </a>
       </Portfolio>
