@@ -35,7 +35,7 @@ export default function Footer() {
   return (
     <FooterBar>
       <SocialLink
-        href="mailto:sascha.rissling@gmail.com?subject=I%20am%20interested%20in%20working%20with%20you.&amp;body=Hello%20Sascha,%0D%0A%0D%0Amy%20name%20is"
+        href="mailto:sascha.rissling@gmail.com"
         target="_blank"
       >
         <MailOutlineIcon />

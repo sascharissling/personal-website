@@ -86,6 +86,7 @@ const PillContainer = styled.div`
   margin-top: 2rem;
   display: flex; 
   gap: 1rem;
+  justify-content: center;
 `
 
 export default function PageMain() {
