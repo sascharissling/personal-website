@@ -105,7 +105,7 @@ export default function PageMain() {
         {/* <Divider /> */}
         {/* <SkillNavigation to="/prod">Music Producer</SkillNavigation> */}
       </ProfessionalSkills>
-        <PillContainer><Pill>React.js</Pill><Pill>Typescript</Pill><Pill>CSS</Pill><Pill>HTML5</Pill><Pill>Agile</Pill></PillContainer>
+        <PillContainer><Pill>React.js</Pill><Pill>Typescript</Pill></PillContainer>
     </PageIdentity>
   );
 }
