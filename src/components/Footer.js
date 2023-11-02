@@ -11,7 +11,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 //STYLE start
 
 const FooterBar = styled.footer`
-  width: 60vw;
+  width: 30vw;
 
   margin: 15px 0px 50px 0px;
 
@@ -31,16 +31,6 @@ const SocialLink = styled.a`
   }
 `;
 
-const GitHub = styled(GitHubIcon)`
-  zoom: 1.3;
-  color: ${props => props.theme.primary};
-  &:hover {
-    color: ${props => props.theme.tertiary};
-  }
-`;
-
-//STYLE end
-
 export default function Footer() {
   return (
     <FooterBar>
@@ -54,11 +44,11 @@ export default function Footer() {
         <PhoneIcon />
       </SocialLink>
       <SocialLink href="https://github.com/sascharissling" target="_blank">
-        <GitHub />
+        <GitHubIcon />
       </SocialLink>
-      <SocialLink href="https://instagram.com/sascharissling" target="_blank">
+      {/* <SocialLink href="https://instagram.com/sascharissling" target="_blank">
         <InstagramIcon />
-      </SocialLink>
+      </SocialLink> */}
       <SocialLink
         href="https://www.linkedin.com/in/sascha-rissling-5a13a0190/"
         target="_blank"
