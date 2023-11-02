@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 //STYLE imports
 import GlobalStyles from "./GlobalStyles";
@@ -35,7 +35,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <AppContainer>
-        <Router>
           <Switch>
             <Route path="/" exact component={PageMain} />
             <Route path="/impressum" component={Impressum} />
@@ -44,7 +43,6 @@ function App() {
           </Switch>
           <Footer />
           <Legal />
-        </Router>
       </AppContainer>
     </ThemeProvider>
   );
