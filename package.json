@@ -1,7 +1,7 @@
 {
+  "homepage": "https://sascharissling.github.io/personal-website/",
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://sascharissling.github.io/personal-website/",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.22",
